@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project Bob</title>
+    <link rel="stylesheet" href="bob.css" />
+  </head>
+  <body>
+    <div class="gray-bar">
+      <h2>Project Roblog</h2>
+      <br />
+      <h3>안요한</h3>
+    </div>
+
+    <div class="meals-container">
+      <!-- 아침 정보 섹션 -->
+      <div id="breakfast-info" class="meal-info1">
+        <h1>아침 정보</h1>
+        <input type="date" id="breakfastDate" name="mealDate" />
+        <button onclick="getBreakfastInfo()">아침 정보 가져오기</button>
+        <p id="breakfast-content">여기에 아침 급식 정보가 표시됩니다.</p>
+      </div>
+
+      <!-- 점심 정보 섹션 -->
+      <div id="lunch-info" class="meal-info2">
+        <h1>점심 정보</h1>
+        <input type="date" id="lunchDate" name="mealDate" />
+        <button onclick="getLunchInfo()">점심 정보 가져오기</button>
+        <p id="lunch-content">여기에 점심 급식 정보가 표시됩니다.</p>
+      </div>
+
+      <!-- 저녁 정보 섹션 -->
+      <div id="dinner-info" class="meal-info3">
+        <h1>저녁 정보</h1>
+        <input type="date" id="dinnerDate" name="mealDate" />
+        <button onclick="getDinnerInfo()">저녁 정보 가져오기</button>
+        <p id="dinner-content">여기에 저녁 급식 정보가 표시됩니다.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
